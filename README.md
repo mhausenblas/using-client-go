@@ -2,12 +2,15 @@
 
 A versioned collection of snippets showing how to use [client-go](https://github.com/kubernetes/client-go/).
 
+Quick links: [Go docs](https://godoc.org/k8s.io/client-go/) | [kubernetes/client-go](https://github.com/kubernetes/client-go/)
+
 Contents:
 
 - [Prerequisites](#prerequisites)
 - [Kubernetes 1.7](#kubernetes-17)
 - [Kubernetes 1.6](#kubernetes-16)
 - [Kubernetes 1.5](#kubernetes-15)
+- [Related](#related)
 
 ## Prerequisites
 
@@ -51,3 +54,12 @@ TBD
 ## Kubernetes 1.5
 
 TBD
+
+## Related
+
+There are some resources available on the Internet that address the 'using client-go' topic, here are some I'm aware of:
+
+- [client-go Examples](https://github.com/kubernetes/client-go/tree/master/examples) from the official repo
+- [Using Kubernetes Go Client to Launch a Jupyter Notebook](https://www.rushtehrani.com/post/using-kubernetes-api/) 12/2016
+- [Using the Kubernetes Client for Go](https://developers.redhat.com/blog/2016/11/25/using-the-kubernetes-client-for-go/) 11/2016
+- StackOverflow [How can I create a simple client app with the Kubernetes Go library?](https://stackoverflow.com/questions/32554893/how-can-i-create-a-simple-client-app-with-the-kubernetes-go-library)
