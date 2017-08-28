@@ -28,4 +28,4 @@ $ go run main.go
 
 ## Watching pods
 
-## Creating a deployment
+## Creating deployments
