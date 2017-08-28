@@ -14,6 +14,8 @@ Contents:
 
 ## Prerequisites
 
+### Go
+
 The snippets shown here have been tested using Go 1.8 and should also work with Go 1.9 (not tested, yet).
 
 In order to manage dependencies (aka vendoring in Go) we use Go [dep](https://github.com/golang/dep).
@@ -28,6 +30,20 @@ $ dep ensure   # every time you add/change dependencies
 Note that if you're new to Go dep and/or dependency management, you might want to read
 [Using Go dep as a project maintainer](https://hackernoon.com/using-go-dep-as-a-project-maintainer-641d1f3006d7)
 before you proceed.
+
+### Kubernetes cluster
+
+The snippets assume that you have a Kubernetes cluster running.
+You can, for example, install [Minikube](https://github.com/kubernetes/minikube) or [Minishift](https://github.com/minishift/minishift) to test it locally.
+
+### Get snippets
+
+To enjoy all the snippets, do the following now:
+
+```
+$ mkdir -p $GOPATH/src/mhausenblas && cd $GOPATH/src/mhausenblas
+$ git clone https://github.com/mhausenblas/using-client-go.git
+```
 
 ## Kubernetes 1.7
 

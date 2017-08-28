@@ -12,4 +12,10 @@ for _, p := range pods.Items {
 }
 ```
 
-See also  the [standalone example](listing-pods/main.go) for listing pods.
+See also the [standalone example](listing-pods/main.go) that you can run like so:
+
+```
+$ cd $GOPATH/src/mhausenblas/using-client-go/1.7/listing-pods
+$ dep ensure
+$ go run main.go
+```
