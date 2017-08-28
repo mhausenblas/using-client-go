@@ -1,5 +1,11 @@
 # Using `client-go` with Kubernetes 1.7
 
+Snippets:
+
+- [Listing pods](#listing-pods)
+- [Watching pods](#watching-pods)
+- [Creating deployments](#creating-deployments)
+
 ## Listing pods
 
 To list all pods in namespace `abc`, do the following:
@@ -19,3 +25,7 @@ $ cd $GOPATH/src/mhausenblas/using-client-go/1.7/listing-pods
 $ dep ensure
 $ go run main.go
 ```
+
+## Watching pods
+
+## Creating a deployment
