@@ -2,11 +2,14 @@
 
 A versioned collection of snippets showing how to use [client-go](https://github.com/kubernetes/client-go/).
 
-Quick links: [Go docs](https://godoc.org/k8s.io/client-go/) | [kubernetes/client-go](https://github.com/kubernetes/client-go/)
+Quick links: [Go docs](https://godoc.org/k8s.io/client-go/) | [kubernetes/client-go](https://github.com/kubernetes/client-go/) | [1.7 snippets](1.7/)
 
-Contents:
+**Table of Contents**:
 
 - [Prerequisites](#prerequisites)
+  - [Go](#go)
+  - [Kubernetes cluster](#kubernetes-cluster)
+  - [Get snippets](#get-snippets)
 - [Kubernetes 1.7](#kubernetes-17)
 - [Kubernetes 1.6](#kubernetes-16)
 - [Kubernetes 1.5](#kubernetes-15)
