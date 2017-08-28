@@ -2,6 +2,13 @@
 
 A versioned collection of snippets showing how to use [client-go](https://github.com/kubernetes/client-go/).
 
+Contents:
+
+- [Prerequisites](#prerequisites)
+- [Kubernetes 1.7](#kubernetes-17)
+- [Kubernetes 1.6](#kubernetes-16)
+- [Kubernetes 1.5](#kubernetes-15)
+
 ## Prerequisites
 
 The snippets shown here have been tested using Go 1.8 and should also work with Go 1.9 (not tested, yet).
