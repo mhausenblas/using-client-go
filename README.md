@@ -51,7 +51,7 @@ $ git clone https://github.com/mhausenblas/using-client-go.git
 
 ## Kubernetes 1.7
 
-Use the following in your `Gopkg.toml` file (add it if it doesn't exist, otherwise update it):
+Once you're using one or more of the snippets, that is, you have imports that reference one or more `client-go` packages, use the following in your `Gopkg.toml` file. Add it if it doesn't exist, otherwise update it:
 
 ```
 [[constraint]]
@@ -69,7 +69,19 @@ Now you can move on to the [Kubernetes 1.7 snippets](1.7/).
 
 ## Kubernetes 1.6
 
-TBD
+Once you're using one or more of the snippets, that is, you have imports that reference one or more `client-go` packages, use the following in your `Gopkg.toml` file. Add it if it doesn't exist, otherwise update it:
+
+```
+[[constraint]]
+  name = "k8s.io/client-go"
+  version = "v3.0.0"
+
+[[override]]
+  name = "k8s.io/apimachinery"
+  branch = "release-1.6"
+```
+
+After you've updated your `Gopkg.toml` file, do `dep ensure` and commit it to your repo.
 
 ## Kubernetes 1.5
 
@@ -77,9 +89,16 @@ TBD
 
 ## Related
 
-There are some resources available on the Internet that address the 'using client-go' topic, here are some I'm aware of:
+Resources available on the Web around the 'using client-go' topic:
 
 - [client-go Examples](https://github.com/kubernetes/client-go/tree/master/examples) from the official repo
 - [Using Kubernetes Go Client to Launch a Jupyter Notebook](https://www.rushtehrani.com/post/using-kubernetes-api/) 12/2016
 - [Using the Kubernetes Client for Go](https://developers.redhat.com/blog/2016/11/25/using-the-kubernetes-client-for-go/) 11/2016
 - StackOverflow [How can I create a simple client app with the Kubernetes Go library?](https://stackoverflow.com/questions/32554893/how-can-i-create-a-simple-client-app-with-the-kubernetes-go-library)
+
+Related artifacts and activities:
+
+- SIG [API Machinery](https://github.com/kubernetes/community/tree/master/sig-api-machinery)
+- [kubernetes/apimachinery](https://github.com/kubernetes/apimachinery)
+- [kubernetes/metrics](https://github.com/kubernetes/metrics)
+- [kubernetes/code-generator](https://github.com/kubernetes/code-generator) which is currently empty, see this [PR](https://github.com/kubernetes/kubernetes/pull/49114) for the status
