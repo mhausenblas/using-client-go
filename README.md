@@ -1,6 +1,7 @@
-# Using client-go
+# Using `client-go`
 
 A versioned collection of snippets showing how to use [client-go](https://github.com/kubernetes/client-go/).
+`client-go` is a bunch of Go packages enabling you to programmatically interact with a Kubernetes cluster.
 
 Quick links: [Go docs](https://godoc.org/k8s.io/client-go/) | [kubernetes/client-go](https://github.com/kubernetes/client-go/) | [1.7 snippets](1.7/)
 
