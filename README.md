@@ -35,6 +35,8 @@ Note that if you're new to Go dep and/or dependency management, you might want t
 [Using Go dep as a project maintainer](https://hackernoon.com/using-go-dep-as-a-project-maintainer-641d1f3006d7)
 before you proceed.
 
+Note also, if you want to contribute a snippet, we're using [Bats](https://github.com/sstephenson/bats) for testing.
+
 ### Kubernetes cluster
 
 The snippets assume that you have a Kubernetes cluster running.
