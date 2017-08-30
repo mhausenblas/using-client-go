@@ -10,7 +10,12 @@ import (
 )
 
 func main() {
-	pl, _ := listpods("default")
+	//fmt.Print("In main")
+	if len(os.Args) != 2 {
+		os.Exit(-1)
+	}
+	namespace := os.Args[1]
+	pl, _ := listpods(namespace)
 	fmt.Println(pl)
 }
 
