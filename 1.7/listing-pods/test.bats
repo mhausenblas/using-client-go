@@ -11,7 +11,7 @@ function teardown() {
 }
 
 @test "ucg17 listing pods" {
-	run go run listing-pods/main.go
+	run go run main.go
 	[ "$status" -eq 0 ]
   [ "${lines[0]}" = "[ucg17-listing-pods]" ]
 }
