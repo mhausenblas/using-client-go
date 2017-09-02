@@ -10,11 +10,11 @@ import (
 )
 
 func main() {
-	pl, _ := listpods("default")
+	pl, _ := listpods()
 	fmt.Println(pl)
 }
 
-func listpods(namespace string) ([]string, error) {
+func listpods() ([]string, error) {
 	var po []string
 	config, err := clientcmd.BuildConfigFromFlags("", os.Getenv("HOME")+"/.kube/config")
 	if err != nil {
@@ -24,6 +24,7 @@ func listpods(namespace string) ([]string, error) {
 	if err != nil {
 		return po, err
 	}
+	namespace := "ucg-test"
 	pods, err := cs.CoreV1().Pods(namespace).List(metav1.ListOptions{})
 	if err != nil {
 		return po, err
